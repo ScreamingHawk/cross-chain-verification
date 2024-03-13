@@ -16,6 +16,8 @@ Hey, you! Yeah, you, the one with the crypto shades and the moon-shaped tattoo. 
 
 **Cosmic Copy-Paste**: Our algorithm moonwalks through the crypto-verse, snatching smart contract code from one blockchain and flinging it onto another. It’s like trying to HODL a flaming NFT while riding a Shiba Inu blindfolded. Good luck, bro! 🌌🔥🚀
 
+**Stellar Source Download**: Now, you can download the source code for any verified smart contract directly to your PC. It’s like catching a falling star and turning it into code. 🌟✨
+
 ## Getting Started
 
 **Clone the Repository**: Type `git clone https://github.com/ScreamingHawk/cross-chain-verification.git`. Pray to the crypto gods that it works.
@@ -25,6 +27,8 @@ Hey, you! Yeah, you, the one with the crypto shades and the moon-shaped tattoo. 
 **Configure Your Portals**: Go to Etherscan and get your keys. Choose your source and destination chains wisely. Remember, BSC loves pancakes, and Ethereum prefers decentralized tea parties. Seriously.
 
 **Copy-Paste Spells**: Use `yarn verify` with some arguments. Wear your wizard hat for maximum effect. If it doesn’t work, blame the alignment of the planets.
+
+**Cosmic Code Retrieval**: Use `yarn download` to download the source code directly to your PC. If you hear faint whispers of "binary blessings", you’re on the right track.
 
 ## Contribution Guidelines
 

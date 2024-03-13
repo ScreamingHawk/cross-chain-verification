@@ -1,5 +1,6 @@
 import { Command } from '@commander-js/extra-typings'
 import { copyVerification } from './verify'
+import { downloadSource } from './download'
 
 const program = new Command()
 
@@ -10,7 +11,7 @@ program
 
 program
   .command('verify')
-  .description('Copy contract verifications across etherscan supported chain explorers')
+  .description('Copy contract verifications across Etherscan supported chain explorers')
   .requiredOption('-u, --source-url <string>', 'Etherscan API URL for the source chain')
   .requiredOption('-k, --source-api-key <string>', 'Etherscan API key for the source chain')
   .requiredOption('-a, --source-address <string>', 'Address of the source contract')
@@ -22,6 +23,17 @@ program
       ...opts,
       destAddress: opts.destAddress || opts.sourceAddress
     })
+  })
+
+program
+  .command('download')
+  .description('Download contract verification from Etherscan supported chain explorers')
+  .requiredOption('-u, --source-url <string>', 'Etherscan API URL for the source chain')
+  .requiredOption('-k, --source-api-key <string>', 'Etherscan API key for the source chain')
+  .requiredOption('-a, --source-address <string>', 'Address of the source contract')
+  .option('-o, --out-file <string>', 'Output file location (optional)')
+  .action(opts => {
+    downloadSource(opts.sourceUrl, opts.sourceApiKey, opts.sourceAddress, opts.outFile)
   })
 
 program.parse()

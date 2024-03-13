@@ -5,6 +5,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "verify": "ts-node src/main.ts verify",
+    "download": "ts-node src/main.ts download",
     "lint": "eslint -c .eslintrc.js \"./**/*.ts\"",
     "lint:fix": "eslint -c .eslintrc.js --fix \"./**/*.ts\"",
     "lint:init": "husky install",
