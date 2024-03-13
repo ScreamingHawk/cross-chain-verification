@@ -2,6 +2,12 @@
 
 Cross Chain Verification is an open-source tool designed to facilitate copying smart contract source verification from one Etherscan instance to another.
 
+Quick example:
+
+```bash
+yarn verify -u https://api.etherscan.io/api -k XXX -a 0x0000000071727De22E5E9d8BAf0edAc6f37da032 -d https://api-sepolia.arbiscan.io/api -e XXX
+```
+
 ## What’s the Deal, Bro?
 
 Hey, you! Yeah, you, the one with the crypto shades and the moon-shaped tattoo. Ever felt like your smart contracts were lost in a cosmic maze? Fear not, because `Cross Chain Verification` is here to help! 🚀
